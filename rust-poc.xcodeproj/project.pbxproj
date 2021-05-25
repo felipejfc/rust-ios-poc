@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3DD2946D265C7B0E002CB24A /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD2946C265C7B0E002CB24A /* libresolv.tbd */; };
-		3DD29473265C806D002CB24A /* libgreetings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD29472265C806D002CB24A /* libgreetings.a */; };
-		3DD29474265C8079002CB24A /* libgreetings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD29472265C806D002CB24A /* libgreetings.a */; };
+		3DD29476265C8911002CB24A /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD29475265C8911002CB24A /* libresolv.tbd */; };
+		3DD29478265C891B002CB24A /* libgreetings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD29477265C891B002CB24A /* libgreetings.a */; };
+		3DD29479265C8927002CB24A /* libgreetings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD29477265C891B002CB24A /* libgreetings.a */; };
 		3DD3E5ED265C68CF00F08C2C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3E5EC265C68CF00F08C2C /* Tests_iOS.swift */; };
 		3DD3E5F8265C68CF00F08C2C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3E5F7265C68CF00F08C2C /* Tests_macOS.swift */; };
 		3DD3E5FA265C68CF00F08C2C /* rust_pocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3E5D1265C68CE00F08C2C /* rust_pocApp.swift */; };
@@ -18,7 +19,6 @@
 		3DD3E5FD265C68CF00F08C2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3E5D2265C68CE00F08C2C /* ContentView.swift */; };
 		3DD3E5FE265C68CF00F08C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD3E5D3265C68CF00F08C2C /* Assets.xcassets */; };
 		3DD3E5FF265C68CF00F08C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD3E5D3265C68CF00F08C2C /* Assets.xcassets */; };
-		3DD3E612265C693B00F08C2C /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD3E611265C693B00F08C2C /* libresolv.tbd */; };
 		3DD3E615265C6AD200F08C2C /* RustGreetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3E614265C6AD200F08C2C /* RustGreetings.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,11 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3DD29468265C726B002CB24A /* libgreetings.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgreetings.a; path = "poc_rust/target/x86_64-apple-ios/release/libgreetings.a"; sourceTree = "<group>"; };
-		3DD2946A265C7296002CB24A /* libgreetings.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgreetings.a; path = "poc_rust/target/aarch64-apple-ios/release/libgreetings.a"; sourceTree = "<group>"; };
 		3DD2946C265C7B0E002CB24A /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
-		3DD2946F265C7C93002CB24A /* libgreetings.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgreetings.a; path = poc_rust/target/universal/release/libgreetings.a; sourceTree = "<group>"; };
-		3DD29472265C806D002CB24A /* libgreetings.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgreetings.a; path = rust/target/universal/libgreetings.a; sourceTree = "<group>"; };
+		3DD29475265C8911002CB24A /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
+		3DD29477265C891B002CB24A /* libgreetings.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgreetings.a; path = rust/target/universal/release/libgreetings.a; sourceTree = "<group>"; };
 		3DD3E5D1265C68CE00F08C2C /* rust_pocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rust_pocApp.swift; sourceTree = "<group>"; };
 		3DD3E5D2265C68CE00F08C2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3DD3E5D3265C68CF00F08C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,8 +57,6 @@
 		3DD3E5F3265C68CF00F08C2C /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD3E5F7265C68CF00F08C2C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		3DD3E5F9265C68CF00F08C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DD3E60F265C691B00F08C2C /* libgreetings.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgreetings.a; path = "../poc_rust/target/aarch64-apple-ios/release/libgreetings.a"; sourceTree = "<group>"; };
-		3DD3E611265C693B00F08C2C /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
 		3DD3E613265C697A00F08C2C /* Poc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Poc-Bridging-Header.h"; sourceTree = "<group>"; };
 		3DD3E614265C6AD200F08C2C /* RustGreetings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustGreetings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,8 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DD29473265C806D002CB24A /* libgreetings.a in Frameworks */,
-				3DD3E612265C693B00F08C2C /* libresolv.tbd in Frameworks */,
+				3DD29478265C891B002CB24A /* libgreetings.a in Frameworks */,
+				3DD29476265C8911002CB24A /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DD29474265C8079002CB24A /* libgreetings.a in Frameworks */,
+				3DD29479265C8927002CB24A /* libgreetings.a in Frameworks */,
 				3DD2946D265C7B0E002CB24A /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,13 +171,9 @@
 		3DD3E60E265C691B00F08C2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3DD2946F265C7C93002CB24A /* libgreetings.a */,
-				3DD29472265C806D002CB24A /* libgreetings.a */,
+				3DD29477265C891B002CB24A /* libgreetings.a */,
+				3DD29475265C8911002CB24A /* libresolv.tbd */,
 				3DD2946C265C7B0E002CB24A /* libresolv.tbd */,
-				3DD29468265C726B002CB24A /* libgreetings.a */,
-				3DD2946A265C7296002CB24A /* libgreetings.a */,
-				3DD3E611265C693B00F08C2C /* libresolv.tbd */,
-				3DD3E60F265C691B00F08C2C /* libgreetings.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
