@@ -8,6 +8,6 @@
 #ifndef Poc_Bridging_Header_h
 #define Poc_Bridging_Header_h
 
-#include "greetings.h"
+#include "rust.h"
 
 #endif /* Poc_Bridging_Header_h */

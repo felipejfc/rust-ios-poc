@@ -19,7 +19,7 @@
 		3DD3E5FD265C68CF00F08C2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3E5D2265C68CE00F08C2C /* ContentView.swift */; };
 		3DD3E5FE265C68CF00F08C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD3E5D3265C68CF00F08C2C /* Assets.xcassets */; };
 		3DD3E5FF265C68CF00F08C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD3E5D3265C68CF00F08C2C /* Assets.xcassets */; };
-		3DD3E615265C6AD200F08C2C /* RustGreetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3E614265C6AD200F08C2C /* RustGreetings.swift */; };
+		3DD3E615265C6AD200F08C2C /* Rust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3E614265C6AD200F08C2C /* Rust.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		3DD3E5F7265C68CF00F08C2C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		3DD3E5F9265C68CF00F08C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DD3E613265C697A00F08C2C /* Poc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Poc-Bridging-Header.h"; sourceTree = "<group>"; };
-		3DD3E614265C6AD200F08C2C /* RustGreetings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustGreetings.swift; sourceTree = "<group>"; };
+		3DD3E614265C6AD200F08C2C /* Rust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rust.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 				3DD3E5D2265C68CE00F08C2C /* ContentView.swift */,
 				3DD3E5D3265C68CF00F08C2C /* Assets.xcassets */,
 				3DD3E613265C697A00F08C2C /* Poc-Bridging-Header.h */,
-				3DD3E614265C6AD200F08C2C /* RustGreetings.swift */,
+				3DD3E614265C6AD200F08C2C /* Rust.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -335,7 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DD3E615265C6AD200F08C2C /* RustGreetings.swift in Sources */,
+				3DD3E615265C6AD200F08C2C /* Rust.swift in Sources */,
 				3DD3E5FC265C68CF00F08C2C /* ContentView.swift in Sources */,
 				3DD3E5FA265C68CF00F08C2C /* rust_pocApp.swift in Sources */,
 			);

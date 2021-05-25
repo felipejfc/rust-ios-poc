@@ -2,8 +2,13 @@ use std::os::raw::{c_char};
 use std::ffi::{CString, CStr};
 
 #[no_mangle]
-pub extern fn rust_greeting(to: *const c_char) -> *mut c_char {
-    let res = match reqwest::blocking::get("http://httpbin.org/get") {
+pub extern fn rust_get(c_url: *const c_char) -> *mut c_char {
+    let c_str = unsafe { CStr::from_ptr(c_url) };
+    let url = match c_str.to_str() {
+        Ok(string) => string,
+        _ => unreachable!()
+    };
+    let res = match reqwest::blocking::get(url) {
         Ok(res) => res,
         _ => unreachable!()
     };
@@ -11,16 +16,11 @@ pub extern fn rust_greeting(to: *const c_char) -> *mut c_char {
         Ok(body) => body,
         _ => unreachable!()
     };
-    //let c_str = unsafe { CStr::from_ptr(to) };
-    //let recipient = match c_str.to_str() {
-    //    Err(_) => "there",
-    //    Ok(string) => string,
-    //};
     CString::new(body).unwrap().into_raw()
 }
 
 #[no_mangle]
-pub extern fn rust_greeting_free(s: *mut c_char) {
+pub extern fn rust_free(s: *mut c_char) {
     unsafe {
         if s.is_null() { return }
         CString::from_raw(s)

@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        let rustGreetings = RustGreetings()
-        Text(rustGreetings.sayHello(to: "someone"))
+        let rust = Rust()
+        Text(rust.getURL(url: "https://httpbin.org/get"))
     }
 }
 
