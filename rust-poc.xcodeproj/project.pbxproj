@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DD2946D265C7B0E002CB24A /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD2946C265C7B0E002CB24A /* libresolv.tbd */; };
+		3DD29473265C806D002CB24A /* libgreetings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD29472265C806D002CB24A /* libgreetings.a */; };
+		3DD29474265C8079002CB24A /* libgreetings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD29472265C806D002CB24A /* libgreetings.a */; };
+		3DD3E5ED265C68CF00F08C2C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3E5EC265C68CF00F08C2C /* Tests_iOS.swift */; };
+		3DD3E5F8265C68CF00F08C2C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3E5F7265C68CF00F08C2C /* Tests_macOS.swift */; };
+		3DD3E5FA265C68CF00F08C2C /* rust_pocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3E5D1265C68CE00F08C2C /* rust_pocApp.swift */; };
+		3DD3E5FB265C68CF00F08C2C /* rust_pocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3E5D1265C68CE00F08C2C /* rust_pocApp.swift */; };
+		3DD3E5FC265C68CF00F08C2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3E5D2265C68CE00F08C2C /* ContentView.swift */; };
+		3DD3E5FD265C68CF00F08C2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3E5D2265C68CE00F08C2C /* ContentView.swift */; };
+		3DD3E5FE265C68CF00F08C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD3E5D3265C68CF00F08C2C /* Assets.xcassets */; };
+		3DD3E5FF265C68CF00F08C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD3E5D3265C68CF00F08C2C /* Assets.xcassets */; };
+		3DD3E612265C693B00F08C2C /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD3E611265C693B00F08C2C /* libresolv.tbd */; };
+		3DD3E615265C6AD200F08C2C /* RustGreetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3E614265C6AD200F08C2C /* RustGreetings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DD3E5E9265C68CF00F08C2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DD3E5CC265C68CD00F08C2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DD3E5D7265C68CF00F08C2C;
+			remoteInfo = "rust-poc (iOS)";
+		};
+		3DD3E5F4265C68CF00F08C2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DD3E5CC265C68CD00F08C2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DD3E5DF265C68CF00F08C2C;
+			remoteInfo = "rust-poc (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DD29468265C726B002CB24A /* libgreetings.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgreetings.a; path = "poc_rust/target/x86_64-apple-ios/release/libgreetings.a"; sourceTree = "<group>"; };
+		3DD2946A265C7296002CB24A /* libgreetings.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgreetings.a; path = "poc_rust/target/aarch64-apple-ios/release/libgreetings.a"; sourceTree = "<group>"; };
+		3DD2946C265C7B0E002CB24A /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		3DD2946F265C7C93002CB24A /* libgreetings.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgreetings.a; path = poc_rust/target/universal/release/libgreetings.a; sourceTree = "<group>"; };
+		3DD29472265C806D002CB24A /* libgreetings.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgreetings.a; path = rust/target/universal/libgreetings.a; sourceTree = "<group>"; };
+		3DD3E5D1265C68CE00F08C2C /* rust_pocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rust_pocApp.swift; sourceTree = "<group>"; };
+		3DD3E5D2265C68CE00F08C2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3DD3E5D3265C68CF00F08C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DD3E5D8265C68CF00F08C2C /* rust-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rust-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD3E5DB265C68CF00F08C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD3E5E0265C68CF00F08C2C /* rust-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rust-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD3E5E2265C68CF00F08C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD3E5E3265C68CF00F08C2C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		3DD3E5E8265C68CF00F08C2C /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD3E5EC265C68CF00F08C2C /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		3DD3E5EE265C68CF00F08C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD3E5F3265C68CF00F08C2C /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD3E5F7265C68CF00F08C2C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		3DD3E5F9265C68CF00F08C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD3E60F265C691B00F08C2C /* libgreetings.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgreetings.a; path = "../poc_rust/target/aarch64-apple-ios/release/libgreetings.a"; sourceTree = "<group>"; };
+		3DD3E611265C693B00F08C2C /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
+		3DD3E613265C697A00F08C2C /* Poc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Poc-Bridging-Header.h"; sourceTree = "<group>"; };
+		3DD3E614265C6AD200F08C2C /* RustGreetings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustGreetings.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DD3E5D5265C68CF00F08C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD29473265C806D002CB24A /* libgreetings.a in Frameworks */,
+				3DD3E612265C693B00F08C2C /* libresolv.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD3E5DD265C68CF00F08C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD29474265C8079002CB24A /* libgreetings.a in Frameworks */,
+				3DD2946D265C7B0E002CB24A /* libresolv.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD3E5E5265C68CF00F08C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD3E5F0265C68CF00F08C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DD3E5CB265C68CD00F08C2C = {
+			isa = PBXGroup;
+			children = (
+				3DD3E5D0265C68CE00F08C2C /* Shared */,
+				3DD3E5DA265C68CF00F08C2C /* iOS */,
+				3DD3E5E1265C68CF00F08C2C /* macOS */,
+				3DD3E5EB265C68CF00F08C2C /* Tests iOS */,
+				3DD3E5F6265C68CF00F08C2C /* Tests macOS */,
+				3DD3E5D9265C68CF00F08C2C /* Products */,
+				3DD3E60E265C691B00F08C2C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DD3E5D0265C68CE00F08C2C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3DD3E5D1265C68CE00F08C2C /* rust_pocApp.swift */,
+				3DD3E5D2265C68CE00F08C2C /* ContentView.swift */,
+				3DD3E5D3265C68CF00F08C2C /* Assets.xcassets */,
+				3DD3E613265C697A00F08C2C /* Poc-Bridging-Header.h */,
+				3DD3E614265C6AD200F08C2C /* RustGreetings.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3DD3E5D9265C68CF00F08C2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DD3E5D8265C68CF00F08C2C /* rust-poc.app */,
+				3DD3E5E0265C68CF00F08C2C /* rust-poc.app */,
+				3DD3E5E8265C68CF00F08C2C /* Tests iOS.xctest */,
+				3DD3E5F3265C68CF00F08C2C /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DD3E5DA265C68CF00F08C2C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3DD3E5DB265C68CF00F08C2C /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		3DD3E5E1265C68CF00F08C2C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				3DD3E5E2265C68CF00F08C2C /* Info.plist */,
+				3DD3E5E3265C68CF00F08C2C /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		3DD3E5EB265C68CF00F08C2C /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3DD3E5EC265C68CF00F08C2C /* Tests_iOS.swift */,
+				3DD3E5EE265C68CF00F08C2C /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		3DD3E5F6265C68CF00F08C2C /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				3DD3E5F7265C68CF00F08C2C /* Tests_macOS.swift */,
+				3DD3E5F9265C68CF00F08C2C /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		3DD3E60E265C691B00F08C2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DD2946F265C7C93002CB24A /* libgreetings.a */,
+				3DD29472265C806D002CB24A /* libgreetings.a */,
+				3DD2946C265C7B0E002CB24A /* libresolv.tbd */,
+				3DD29468265C726B002CB24A /* libgreetings.a */,
+				3DD2946A265C7296002CB24A /* libgreetings.a */,
+				3DD3E611265C693B00F08C2C /* libresolv.tbd */,
+				3DD3E60F265C691B00F08C2C /* libgreetings.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DD3E5D7265C68CF00F08C2C /* rust-poc (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD3E602265C68CF00F08C2C /* Build configuration list for PBXNativeTarget "rust-poc (iOS)" */;
+			buildPhases = (
+				3DD3E5D4265C68CF00F08C2C /* Sources */,
+				3DD3E5D5265C68CF00F08C2C /* Frameworks */,
+				3DD3E5D6265C68CF00F08C2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "rust-poc (iOS)";
+			productName = "rust-poc (iOS)";
+			productReference = 3DD3E5D8265C68CF00F08C2C /* rust-poc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DD3E5DF265C68CF00F08C2C /* rust-poc (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD3E605265C68CF00F08C2C /* Build configuration list for PBXNativeTarget "rust-poc (macOS)" */;
+			buildPhases = (
+				3DD3E5DC265C68CF00F08C2C /* Sources */,
+				3DD3E5DD265C68CF00F08C2C /* Frameworks */,
+				3DD3E5DE265C68CF00F08C2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "rust-poc (macOS)";
+			productName = "rust-poc (macOS)";
+			productReference = 3DD3E5E0265C68CF00F08C2C /* rust-poc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DD3E5E7265C68CF00F08C2C /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD3E608265C68CF00F08C2C /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				3DD3E5E4265C68CF00F08C2C /* Sources */,
+				3DD3E5E5265C68CF00F08C2C /* Frameworks */,
+				3DD3E5E6265C68CF00F08C2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DD3E5EA265C68CF00F08C2C /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 3DD3E5E8265C68CF00F08C2C /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3DD3E5F2265C68CF00F08C2C /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD3E60B265C68CF00F08C2C /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				3DD3E5EF265C68CF00F08C2C /* Sources */,
+				3DD3E5F0265C68CF00F08C2C /* Frameworks */,
+				3DD3E5F1265C68CF00F08C2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DD3E5F5265C68CF00F08C2C /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 3DD3E5F3265C68CF00F08C2C /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DD3E5CC265C68CD00F08C2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					3DD3E5D7265C68CF00F08C2C = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					3DD3E5DF265C68CF00F08C2C = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					3DD3E5E7265C68CF00F08C2C = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 3DD3E5D7265C68CF00F08C2C;
+					};
+					3DD3E5F2265C68CF00F08C2C = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 3DD3E5DF265C68CF00F08C2C;
+					};
+				};
+			};
+			buildConfigurationList = 3DD3E5CF265C68CD00F08C2C /* Build configuration list for PBXProject "rust-poc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DD3E5CB265C68CD00F08C2C;
+			productRefGroup = 3DD3E5D9265C68CF00F08C2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DD3E5D7265C68CF00F08C2C /* rust-poc (iOS) */,
+				3DD3E5DF265C68CF00F08C2C /* rust-poc (macOS) */,
+				3DD3E5E7265C68CF00F08C2C /* Tests iOS */,
+				3DD3E5F2265C68CF00F08C2C /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DD3E5D6265C68CF00F08C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD3E5FE265C68CF00F08C2C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD3E5DE265C68CF00F08C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD3E5FF265C68CF00F08C2C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD3E5E6265C68CF00F08C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD3E5F1265C68CF00F08C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DD3E5D4265C68CF00F08C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD3E615265C6AD200F08C2C /* RustGreetings.swift in Sources */,
+				3DD3E5FC265C68CF00F08C2C /* ContentView.swift in Sources */,
+				3DD3E5FA265C68CF00F08C2C /* rust_pocApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD3E5DC265C68CF00F08C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD3E5FD265C68CF00F08C2C /* ContentView.swift in Sources */,
+				3DD3E5FB265C68CF00F08C2C /* rust_pocApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD3E5E4265C68CF00F08C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD3E5ED265C68CF00F08C2C /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD3E5EF265C68CF00F08C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD3E5F8265C68CF00F08C2C /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DD3E5EA265C68CF00F08C2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DD3E5D7265C68CF00F08C2C /* rust-poc (iOS) */;
+			targetProxy = 3DD3E5E9265C68CF00F08C2C /* PBXContainerItemProxy */;
+		};
+		3DD3E5F5265C68CF00F08C2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DD3E5DF265C68CF00F08C2C /* rust-poc (macOS) */;
+			targetProxy = 3DD3E5F4265C68CF00F08C2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3DD3E600265C68CF00F08C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/rust/src";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/rust/target/universal/release";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Shared/Poc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DD3E601265C68CF00F08C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/rust/src";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/rust/target/universal/release";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Shared/Poc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3DD3E603265C68CF00F08C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J2APFQ8ES;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/rust/src";
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/rust/target/universal/release";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wl.rust-poc";
+				PRODUCT_NAME = "rust-poc";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DD3E604265C68CF00F08C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J2APFQ8ES;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/rust/src";
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/rust/target/universal/release";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wl.rust-poc";
+				PRODUCT_NAME = "rust-poc";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DD3E606265C68CF00F08C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/rust/src";
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/rust/target/universal/release";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wl.rust-poc";
+				PRODUCT_NAME = "rust-poc";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3DD3E607265C68CF00F08C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/rust/src";
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/rust/target/universal/release";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wl.rust-poc";
+				PRODUCT_NAME = "rust-poc";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3DD3E609265C68CF00F08C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wl.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "rust-poc (iOS)";
+			};
+			name = Debug;
+		};
+		3DD3E60A265C68CF00F08C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wl.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "rust-poc (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DD3E60C265C68CF00F08C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wl.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "rust-poc (macOS)";
+			};
+			name = Debug;
+		};
+		3DD3E60D265C68CF00F08C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wl.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "rust-poc (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DD3E5CF265C68CD00F08C2C /* Build configuration list for PBXProject "rust-poc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD3E600265C68CF00F08C2C /* Debug */,
+				3DD3E601265C68CF00F08C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DD3E602265C68CF00F08C2C /* Build configuration list for PBXNativeTarget "rust-poc (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD3E603265C68CF00F08C2C /* Debug */,
+				3DD3E604265C68CF00F08C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DD3E605265C68CF00F08C2C /* Build configuration list for PBXNativeTarget "rust-poc (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD3E606265C68CF00F08C2C /* Debug */,
+				3DD3E607265C68CF00F08C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DD3E608265C68CF00F08C2C /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD3E609265C68CF00F08C2C /* Debug */,
+				3DD3E60A265C68CF00F08C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DD3E60B265C68CF00F08C2C /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD3E60C265C68CF00F08C2C /* Debug */,
+				3DD3E60D265C68CF00F08C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DD3E5CC265C68CD00F08C2C /* Project object */;
+}
