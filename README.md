@@ -12,4 +12,7 @@ this is needed for compiling for ios with bitcode enabled.
 
 ## compile the lib
 
-```cargo lipo --release```
+```
+cd rust
+cargo lipo --release
+```
